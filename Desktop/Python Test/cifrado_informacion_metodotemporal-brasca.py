@@ -1,3 +1,9 @@
+__author__ = "Ignacio Brasca"
+__license__ = "MIT"
+__version__ = "1.0.0"
+__email__ = "warkanlock@gmail.com"
+__status__ = "In development"
+
 import time
 import random 
 import matplotlib.pyplot as plt
