@@ -64,32 +64,3 @@ def decode(word_encode):
 		output_word.append(str(unichr(int(float(word_encode[i])))))
 		#letra_convertida.append(str(unichr(int(word_encode[i]))))
 	return output_word
-
-#VALORES DE LA RANDOM KEY
-testing_list = generate_random_key_list(key, key_constelacion)
-print "Claves senuelo: \n", testing_list
-
-#GENERAR EL CODIGO A ENCRIPTAR#
-#code = input("Input the code to encode: ")
-#code = "Nano"
-
-#RECIBIR LA PALABRA 
-word_complete = generate_word(code)
-
-#ESCRIBIR LA PALABRA ENCRIPTADA
-print "Informacion Real: \n", word_complete
-
-#ABSTRAER
-word_encode = encode(word_complete, testing_list)
-print "Informacion Cifrada: \n", word_encode
-
-#CONVERTIR A TEXTO
-print "Palabra Codigo: \n", decode(word_encode)
-
-word_final = ''.join(decode(word_encode))
-print word_final 
-
-end = time.time()
-
-print "Tiempo requerido:" 
-print(end-start)
